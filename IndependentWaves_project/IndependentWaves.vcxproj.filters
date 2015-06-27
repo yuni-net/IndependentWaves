@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\IndependentWaves\iw\xrandom.cpp">
+      <Filter>IndependentWaves\xrandom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IndependentWaves\iw\xy2radian.cpp">
+      <Filter>IndependentWaves\radian</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IndependentWaves\iw\bfile.cpp">
+      <Filter>IndependentWaves\bfile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IndependentWaves\iw\filesize.cpp">
+      <Filter>IndependentWaves\filesize</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IndependentWaves\iw\radian2degree.cpp">
+      <Filter>IndependentWaves\radian</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="IndependentWaves">
+      <UniqueIdentifier>{97a5599f-a41e-4481-953e-b89122b243e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IndependentWaves\xrandom">
+      <UniqueIdentifier>{4fc37bf9-eaef-4b1e-989a-cedf57c7646b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IndependentWaves\bfile">
+      <UniqueIdentifier>{8a34b1b5-e4d8-412a-a560-5136d6d7bb3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IndependentWaves\filesize">
+      <UniqueIdentifier>{a262d2c5-092d-4637-b402-cb0dec7b1481}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IndependentWaves\radian">
+      <UniqueIdentifier>{2240bd81-6245-4dcc-aacc-808a1bb15c2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IndependentWaves\coor">
+      <UniqueIdentifier>{1d6e5dc8-e90e-477b-b0d1-5cdf31428219}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\IndependentWaves\iw\cnct.h">
+      <Filter>IndependentWaves</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IndependentWaves\iw\trade.h">
+      <Filter>IndependentWaves</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IndependentWaves\iw\vector.h">
+      <Filter>IndependentWaves</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IndependentWaves\iw\cast.h">
+      <Filter>IndependentWaves</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IndependentWaves\iw\delete.h">
+      <Filter>IndependentWaves</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IndependentWaves\iw\xrandom.h">
+      <Filter>IndependentWaves\xrandom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IndependentWaves\iw\typedef.h">
+      <Filter>IndependentWaves</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IndependentWaves\IndependentWaves.h">
+      <Filter>IndependentWaves</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IndependentWaves\iw\bfile.h">
+      <Filter>IndependentWaves\bfile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IndependentWaves\iw\filesize.h">
+      <Filter>IndependentWaves\filesize</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IndependentWaves\iw\constant.h">
+      <Filter>IndependentWaves</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IndependentWaves\iw\iw_radian.h">
+      <Filter>IndependentWaves\radian</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IndependentWaves\iw\iw_coor.h">
+      <Filter>IndependentWaves\coor</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
