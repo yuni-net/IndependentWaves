@@ -126,7 +126,7 @@ namespace iw
 				if (needsize < 128) needsize = 128;
 				re_secure(needsize * 2);
 			}
-			for (uint i = 0; i<size; ++i) AddObject();
+			for (uint i = 0; i<size; ++i) add_object();
 			return *this;
 		}
 		iw::Array<X>& addsize(const uint size, const X& req){
@@ -135,14 +135,8 @@ namespace iw
 				if (needsize < 128) needsize = 128;
 				re_secure(needsize * 2);
 			}
-			for (uint i = 0; i < size; ++i) AddObject(req);
+			for (uint i = 0; i < size; ++i) add_object(req);
 			return *this;
-		}
-		iw::Array<X>& operator++ (){ return addsize(); }
-		iw::Array<X> operator++ (int){
-			iw::Array<X> old(*this);
-			addsize();
-			return old;
 		}
 
 		iw::Array<X>& popsize(const uint size = 1){
@@ -154,12 +148,6 @@ namespace iw
 				--elem_size;
 			}
 			return *this;
-		}
-		iw::Array<X>& operator-- (){ return popsize(); }
-		iw::Array<X> operator-- (int){
-			iw::Array<X> old(*this);
-			popsize();
-			return old;
 		}
 
 		iw::Array<X>& zerosize(){
@@ -173,7 +161,7 @@ namespace iw
 				if (needsize < 128) needsize = 128;
 				re_secure(needsize * 2);
 			}
-			AddObject();
+			add_object();
 			return *this;
 		}
 		iw::Array<X>& add(const X& req){
@@ -182,7 +170,7 @@ namespace iw
 				if (needsize < 128) needsize = 128;
 				re_secure(needsize * 2);
 			}
-			AddObject(req);
+			add_object(req);
 			return *this;
 		}
 		iw::Array<X> & operator+= (const X& input){
@@ -199,7 +187,7 @@ namespace iw
 				if (needsize < 128) needsize = 128;
 				re_secure(needsize * 2);
 			}
-			for (uint i = 0; i < num; ++i) AddObject(req);
+			for (uint i = 0; i < num; ++i) add_object(req);
 			return *this;
 		}
 		iw::Array<X> & add(const iw::Array<X>& input){
@@ -225,7 +213,7 @@ namespace iw
 
 		const X& access(const uint index) const {
 			if (index >= size()){
-				throw std::out_of_range("範囲外アクセスエラー");
+				throw std::out_of_range("iw::Array Out-of-Range Access Error");
 			}
 			return content[index];
 		}
@@ -297,23 +285,23 @@ namespace iw
 			uint space;
 
 			void re_secure(uint size){
-				X* another = static_cast<X*>(malloc(sizeof(X) *size));
+				X* another = static_cast<X*>(malloc(sizeof(X) * size));
 				trade(content, another);
 				uint oldsize = this->size();
 				elem_size = 0;
 				for (uint i = 0; i < oldsize; ++i){
-					AddObject(another[i]);
+					add_object(another[i]);
 					another[i].~X();
 				}
 				free(another);
 				space = size;
 			}
 
-			void AddObject(){
+			void add_object(){
 				++elem_size;
 				new(address(size() - 1)) X;
 			}
-			void AddObject(const X& req){
+			void add_object(const X& req){
 				++elem_size;
 				new(address(size() - 1)) X(req);
 			}
