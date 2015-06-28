@@ -41,11 +41,11 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\正章\Documents\CppProjects\IndependentWaves;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\MoNoQLoREATOR\Documents\projects\cpp\IndependentWaves\IndependentWaves;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\Users\正章\Documents\CppProjects\IndependentWaves;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\MoNoQLoREATOR\Documents\projects\cpp\IndependentWaves\IndependentWaves;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -82,27 +82,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\IndependentWaves\iw\bfile.cpp" />
-    <ClCompile Include="..\IndependentWaves\iw\filesize.cpp" />
-    <ClCompile Include="..\IndependentWaves\iw\radian2degree.cpp" />
-    <ClCompile Include="..\IndependentWaves\iw\xrandom.cpp" />
-    <ClCompile Include="..\IndependentWaves\iw\xy2radian.cpp" />
+    <ClCompile Include="..\IndependentWaves\bfile.cpp" />
+    <ClCompile Include="..\IndependentWaves\filesize.cpp" />
+    <ClCompile Include="..\IndependentWaves\radian2degree.cpp" />
+    <ClCompile Include="..\IndependentWaves\xrandom.cpp" />
+    <ClCompile Include="..\IndependentWaves\xy2radian.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\IndependentWaves\IndependentWaves.h" />
-    <ClInclude Include="..\IndependentWaves\iw\bfile.h" />
-    <ClInclude Include="..\IndependentWaves\iw\cast.h" />
-    <ClInclude Include="..\IndependentWaves\iw\cnct.h" />
-    <ClInclude Include="..\IndependentWaves\iw\constant.h" />
-    <ClInclude Include="..\IndependentWaves\iw\delete.h" />
-    <ClInclude Include="..\IndependentWaves\iw\filesize.h" />
-    <ClInclude Include="..\IndependentWaves\iw\iw_coor.h" />
-    <ClInclude Include="..\IndependentWaves\iw\trade.h" />
-    <ClInclude Include="..\IndependentWaves\iw\typedef.h" />
-    <ClInclude Include="..\IndependentWaves\iw\vector.h" />
-    <ClInclude Include="..\IndependentWaves\iw\xrandom.h" />
-    <ClInclude Include="..\IndependentWaves\iw\iw_radian.h" />
+    <ClInclude Include="..\IndependentWaves\iw_bfile.h" />
+    <ClInclude Include="..\IndependentWaves\iw_cast.h" />
+    <ClInclude Include="..\IndependentWaves\iw_cnct.h" />
+    <ClInclude Include="..\IndependentWaves\iw_constant.h" />
+    <ClInclude Include="..\IndependentWaves\iw_coor.h" />
+    <ClInclude Include="..\IndependentWaves\iw_delete.h" />
+    <ClInclude Include="..\IndependentWaves\iw_filesize.h" />
+    <ClInclude Include="..\IndependentWaves\iw_radian.h" />
+    <ClInclude Include="..\IndependentWaves\iw_trade.h" />
+    <ClInclude Include="..\IndependentWaves\iw_typedef.h" />
+    <ClInclude Include="..\IndependentWaves\iw_array.h" />
+    <ClInclude Include="..\IndependentWaves\iw_xrandom.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

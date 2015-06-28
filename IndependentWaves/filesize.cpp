@@ -1,6 +1,7 @@
-#include "filesize.h"
 #include <cstdio>
-#include "cast.h"
+
+#include "iw_filesize.h"
+#include "iw_cast.h"
 
 #pragma warning(push)
 #pragma warning(disable:4996)

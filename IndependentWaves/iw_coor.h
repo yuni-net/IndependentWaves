@@ -3,13 +3,13 @@
 
 namespace iw
 {
-	struct coor2
+	struct Coor2
 	{
 		float x;
 		float y;
 	};
 
-	struct coor3
+	struct Coor3
 	{
 		float x;
 		float y;
